@@ -12,6 +12,6 @@ public class MemberServiceImpl implements MemberService {
 
     @Override
     public Member findMember(Long MemberId) {
-        return memberRepository.findBy(MemberId);
+        return memberRepository.findById(MemberId);
     }
 }

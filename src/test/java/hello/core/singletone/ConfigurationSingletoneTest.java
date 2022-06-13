@@ -41,5 +41,6 @@ public class ConfigurationSingletoneTest {
         AppConfig bean = ac.getBean(AppConfig.class);
 
         System.out.println("bean = "+ bean.getClass());
+        //출력값 : class hello.core.AppConfig$$EnhancerBySpringCGLIB$$c1308b36
     }
 }

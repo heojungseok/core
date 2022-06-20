@@ -19,6 +19,7 @@ class StatefulServiceTest {
         statefulService1.order("userA", 10000);
         //ThreadB: B 사용자가 20000원 주문
         statefulService2.order("userB", 20000);
+
         //10000이여야 하는데 20000으로 되버림 위에 코드로 인해서 order가 가로채짐
         Assertions.assertThat(statefulService1.getPrice()).isEqualTo(20000);
     }
